@@ -1,0 +1,12 @@
+"Write a program that will select a random names from a list of names. That person selected will have to pay for everybody's food bill."
+
+names = names_string.split(", ")
+# The code above converts the input into an array seperating
+#each name in the input by a comma and space.
+# 🚨 Don't change the code above 👆
+import random
+
+total_people = len(names)
+randomnum = random.randint(0, total_people-1)
+selected_person = names[randomnum]
+print(f'{selected_person} is going to buy the meal today!')
